@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from webmon_lib import *
+from webmon_lib import parse_config, UrlMon
 
 CONFIG_FILE = "webmon.conf"
 LOG_FILE = "webmon.log"
