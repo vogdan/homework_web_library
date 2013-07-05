@@ -13,7 +13,7 @@ Program that monitors web sites and reports their availability.
   The program runs in an infnite loop that can be stopped by hitting CTRL+C
     
 ###Input###
-  URLs, content requirement string and checking period are read from the config file (webmon.conf).
+  URLs, content requirement strings and checking periods are read from the config file (webmon.conf).
   In the config file, each URL section contains 3 lines: URL, match string and period in milliseconds.
   Each different URL sections must be separaded by an empty line.
 
