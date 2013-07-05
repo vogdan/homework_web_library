@@ -14,14 +14,20 @@ Program that monitors web sites and reports their availability.
     
 ###Input###
   URLs, content requirement strings and checking periods are read from the config file (webmon.conf).
-  In the config file, each URL section contains 3 lines: URL, match string and period in milliseconds.
-  Each different URL sections must be separaded by an empty line.
+  In the config file, each URL section contains 3 lines: URL, match string (it can also be a regexp) and period in milliseconds.
+  Each different URL section must be separaded by an empty line.
 
     The project includes an example config file.
   
 ###Output###
-  The program writes timestamp, URL, content requirement string, load time and request resutl to the log file (webmon.log).
+  The program writes timestamp, URL, content requirement string, load time (in ms) and request resuts to the log file (webmon.log).
   The information from multiple program runs will be appended to the same log file.
+  
+  Request results can be:
+      
+      MATCH!MATCH!MATCH! - the content requirements were fulfilled
+      NO MATCH! - the content requirements were not fulfilled
+      Huston, we have a problem! - error while retrieving URL (the web site is down?)
     
   Example log file contents:
   
