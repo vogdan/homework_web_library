@@ -10,7 +10,7 @@ Program that monitors web sites and reports their availability.
 
 
 ###How it works###
-  The program runs in an infnite loop that can be stopped by hitting CTRL+C
+  The program runs in an infnite loop that can be stopped by hitting CTRL+C.
     
 ###Input###
   URLs, content requirement strings and checking periods are read from the config file (webmon.conf).
