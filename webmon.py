@@ -11,6 +11,15 @@ for conf in conf_l:
     conf.append(LOG_FILE)
     urlmon_l.append(UrlMon(*conf))
 
+print "Starting URL monitor..."
+print "Reading config file '{}'...".format(CONFIG_FILE)
+print "Writing to log file '{}'...".format(LOG_FILE)
+print "\nHit CTRL+C to end program."
 
-for urlmon in urlmon_l:
-    urlmon.do_request()
+while 1:
+    try:
+        for urlmon in urlmon_l:
+            urlmon.do_request()
+    except KeyboardInterrupt:
+        print "\nAu revoir."
+        break
